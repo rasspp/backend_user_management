@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://127.0.0.1:5000/users/64ee1ce5a1960359475f892e
+
+###
+POST http://127.0.0.1:5000/users
+Content-Type: application/json
+
+{
+    "name": "Aji Ramatias",
+    "email": "aji@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://127.0.0.1:5000/users/64ee8717a1960359475f8936
+Content-Type: application/json
+
+{
+    "name": "Aji Ramatias dan bintang",
+    "email": "ajidanbintang@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://127.0.0.1:5000/users/64ee1d13a1960359475f8932
