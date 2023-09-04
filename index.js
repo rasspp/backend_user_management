@@ -8,9 +8,6 @@ const port = 5000;
 
 const app = express();
 
-// Connect MongoDB local at default port 27017.
-// mongodb://127.0.0.1:27017/contact_app
-
 const dbUrl = process.env.MONGODB_URI;
 mongoose.connect(dbUrl, {
    useNewUrlParser: true,
